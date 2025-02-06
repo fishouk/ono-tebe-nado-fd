@@ -11,6 +11,10 @@
   gap: 33px;
 }
 
+.header__link {
+  text-decoration: none;
+}
+
 .header__links-list-item {
   list-style: circle;
   border-bottom: 1px solid #000;
@@ -45,6 +49,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 180px;
 }
 
 .cover__title {
@@ -99,15 +104,140 @@
 
 /* Лоты */
 .lots {
+ padding: 0 24px;
+ margin-bottom: 155px;
+}
 
+.lots__heading {
+  margin-left: 40px;
+  margin-bottom: 27px;
+}
+
+.lots__card-list {
+  margin-bottom: 34px;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 25px;
+}
+
+.lots__card-list-item {
+  min-height: 596px;
+  width: 334px;
+}
+
+.card-link {
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 48px 40px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__title {
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 26.4px;
+  position: relative;
+  z-index: 2;
+}
+
+.card__text {
+  position: relative;
+  z-index: 2;
+
+}
+
+.card_type_film {
+  background: url(../images/card-lot-01.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.card_type_book {
+  background: url(../images/card-lot-02.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.card_type_picture {
+  background: url(../images/card-lot-03.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.lots__look-more-link {
+  margin-left: 40px;
+  font-size: 20px;
+  line-height: 23.48px;
 }
 
 /* О нас */
 .about {
+  padding: 0 24px;
+  margin-bottom: 180px;
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  gap: 25px;
+}
 
+.about__logo {
+  margin: 0 auto;
+  width: 240px;
+  height: 240px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__logo-image {
+  width: 148px;
+}
+
+.about__title {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.about__text {
+  margin-bottom: 24px;
+}
+
+.about__text:last-of-type {
+  margin-bottom: 0;
 }
 
 /* Футер */
 .footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 50px 82px;
+}
 
+.footer__menu-list {
+  text-align: center;
+}
+
+.footer__menu-link_active,
+.footer__menu-link:hover {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 48px;
+  justify-self: end;
+}
+
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
 }

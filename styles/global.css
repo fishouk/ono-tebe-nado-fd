@@ -70,6 +70,7 @@ address {
   font-size: 18px;
   font-weight: 400;
   line-height: 24.3px;
+  font-style: normal;
 }
 
 ul {
@@ -80,6 +81,11 @@ a {
   font-size: 18px;
   font-weight: 400;
   line-height: 21.13px;
+  text-underline-offset: 4px;
+  transition: all 0.3s ease;
+}
+
+a:hover {
   text-decoration: none;
 }
 
