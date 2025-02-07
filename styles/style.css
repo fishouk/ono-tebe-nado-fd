@@ -1,3 +1,51 @@
+/* Общие стили */
+
+.heading-1 {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 115px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.heading-2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.96px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.address {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.3px;
+  font-style: normal;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.link-active {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
 /* Шапка */
 .header {
   display: grid;
@@ -11,23 +59,12 @@
   gap: 33px;
 }
 
-.header__link {
-  text-decoration: none;
-}
-
 .header__links-list-item {
   list-style: circle;
-  border-bottom: 1px solid #000;
-  transition: all 0.3s ease-out;
 }
 
 .header__links-list-item:first-child {
   list-style: none;
-}
-
-.header__links-list-item_active,
-.header__links-list-item:hover {
-  border-bottom: none;
 }
 
 .header__logo {
@@ -63,15 +100,15 @@
   z-index: 2;
 }
 
-.aligned-text_left {
+.cover__title-text_left {
   text-align: left;
 }
 
-.aligned-text_center {
+.cover__title-text_center {
   text-align: center;
 }
 
-.aligned-text_right {
+.cover__title-text_right {
   text-align: right;
 }
 
@@ -128,6 +165,7 @@
 .card-link {
   height: 100%;
   width: 100%;
+  text-decoration: none;
 }
 
 .card {
@@ -139,6 +177,21 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .card__title {
@@ -154,21 +207,6 @@
   position: relative;
   z-index: 2;
 
-}
-
-.card_type_film {
-  background: url(../images/card-lot-01.jpg) no-repeat center;
-  background-size: cover;
-}
-
-.card_type_book {
-  background: url(../images/card-lot-02.jpg) no-repeat center;
-  background-size: cover;
-}
-
-.card_type_picture {
-  background: url(../images/card-lot-03.jpg) no-repeat center;
-  background-size: cover;
 }
 
 .lots__look-more-link {
@@ -223,11 +261,6 @@
 
 .footer__menu-list {
   text-align: center;
-}
-
-.footer__menu-link_active,
-.footer__menu-link:hover {
-  text-decoration: none;
 }
 
 .footer__social-list {
